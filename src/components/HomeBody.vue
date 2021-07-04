@@ -39,7 +39,6 @@ export default {
 <style scoped>
 .poster{
     overflow: hidden;
-    display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -47,7 +46,6 @@ export default {
 }
 .content{
     overflow: hidden;
-    display: flex;
     align-items: center;
     justify-content: center;
     width: 150%;
