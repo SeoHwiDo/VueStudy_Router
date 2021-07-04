@@ -1,9 +1,9 @@
 <template>
     <div>
-        <v-toolbar dense color="blue" dark flat>
+        <v-toolbar dark dense flat color="blue">
             <v-toolbar-title>
-                <v-btn text router :to="'/home'">
-                    <span style="font-weight:bold color:orange">G</span>
+                <v-btn text router :to="'/'">
+                    <span style="font-weight:bold; color:orange">G</span>
                     <span style="font-weight:bold">road</span>
                 </v-btn>
             </v-toolbar-title>
