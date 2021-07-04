@@ -13,5 +13,5 @@ import AppNavi from './components/AppNavi';
 export default {
   name: 'App',
   compnents:{AppNavi}
-};
+}
 </script>
