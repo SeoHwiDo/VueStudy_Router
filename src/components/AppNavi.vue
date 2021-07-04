@@ -1,6 +1,7 @@
 <template>
     <div>
         <v-toolbar dark dense flat color="blue">
+            <v-app-bar-nav-icon @click="nav_drawer=!nav_drawer" v-if="$vuetify.breakpoint.xsOnly"></v-app-bar-nav-icon>
             <v-toolbar-title>
                 <v-btn text router :to="'/'">
                     <span style="font-weight:bold; color:orange">G</span>
@@ -8,20 +9,22 @@
                 </v-btn>
             </v-toolbar-title>
             <v-spacer></v-spacer>
-            <v-toolbar-items>
+            <v-toolbar-items v-if="$vuetify.breakpoint.smAndUp">
                 <v-btn text v-for="link in links" :key="link.icon" router :to="link.route">{{link.Text}}</v-btn>
             </v-toolbar-items>
         </v-toolbar>
         <v-navigation-drawer  app v-model="nav_drawer" temporary>
             <v-list nav dense>
-                <v-list-item v-for="link in links" :key="link.icon" router :to="link.route">
-                    <v-list-item-action>
-                        <v-icon left>{{link.icon}}</v-icon>
-                    </v-list-item-action>
-                    <v-list-item-content>
-                        <v-list-item-title>{{link.text}}</v-list-item-title>
-                    </v-list-item-content>
-                </v-list-item>
+                <v-list-item-group v-model="group" active-class="deep-purple--text text--accent-4">
+                    <v-list-item v-for="link in links" :key="link.icon" router :to="link.route">
+                        <v-list-item-action>
+                            <v-icon left>{{link.icon}}</v-icon>
+                        </v-list-item-action>
+                        <v-list-item-content>
+                            <v-list-item-title>{{link.text}}</v-list-item-title>
+                        </v-list-item-content>
+                    </v-list-item>
+                </v-list-item-group>
             </v-list>
         </v-navigation-drawer>
     </div>
