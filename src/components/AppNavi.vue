@@ -13,7 +13,7 @@
                 <v-btn text v-for="link in links" :key="link.icon" router :to="link.route">{{link.Text}}</v-btn>
             </v-toolbar-items>
         </v-toolbar>
-        <v-navigation-drawer app v-model="nav_drawer" temporary>
+        <v-navigation-drawer  app v-model="nav_drawer" temporary>
             <v-list nav dense>
                 <v-list-item-group v-model="group" active-class="deep-purple--text text--accent-4">
                     <v-list-item v-for="link in links" :key="link.name" router :to="link.route">
@@ -21,10 +21,10 @@
                             <v-icon left>{{link.icon}}</v-icon>
                         </v-list-item-action>
                         <v-list-item-content>
-                            <v-list-item-title style="color:black">{{link.text}}</v-list-item-title>
+                            <v-list-item-title>{{link.text}}</v-list-item-title>
                         </v-list-item-content>
                     </v-list-item>
-                </v-list-item-group>
+                    </v-list-item-group>
             </v-list>
         </v-navigation-drawer>
     </div>
