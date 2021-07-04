@@ -1,14 +1,15 @@
 <template>
   <div>
+    <app-navi></app-navi>
     <v-content>
-      <app-navi></app-navi>
+      
       <router-view></router-view>
     </v-content>
   </div>
 </template>
 
 <script>
-import AppNavi from './components/AppNavi';
+import AppNavi from '@/components/AppNavi';
 
 export default {
   name: 'App',
