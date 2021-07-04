@@ -30,13 +30,13 @@ export default {
 </script>
 <style scoped>
 .poster{
-    background: url('~@assets/home_body_poster.jpg');
+    background: url('/home/shd-sftp/shd-vue/src/assets/home_body_poster.jpg');
     background-size: cover;
     width: 100%;
     height: 100%;
 }
 .content{
-    background: url('~@assets/home_body_content.jpg');
+    background: url('/home/shd-sftp/shd-vue/src/assets/home_body_content.jpg');
     background-size: cover;
     width: 100%;
     height: 100%;
