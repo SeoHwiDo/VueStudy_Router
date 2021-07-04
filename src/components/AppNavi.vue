@@ -1,7 +1,6 @@
 <template>
     <div>
-        <v-toolbar dense dark>
-            <v-app-bar-nav-icon @click="nav_drawer=!nav_drawer" v-if="$vuetify.breakpoint.xsOnly"></v-app-bar-nav-icon>
+        <v-toolbar dense color="teal" dark flat>
             <v-toolbar-title>
                 <span style="font-weight:bold color:#DB631F">G</span>
                 <span style="font-weight:bold">road</span>
