@@ -1,13 +1,13 @@
 <template>
     <div>
-        <v-toolbar dense color="teal" dark flat>
+        <v-toolbar dense color="blue" dark flat>
             <v-toolbar-title>
-                <span style="font-weight:bold color:#DB631F">G</span>
+                <span style="font-weight:bold color:orange">G</span>
                 <span style="font-weight:bold">road</span>
             </v-toolbar-title>
             <v-spacer></v-spacer>
             <v-toolbar-items>
-                <v-btn text v-for="link in links" :key="link.icon" router :to="link.route">{{link.text}}</v-btn>
+                <v-btn text v-for="link in links" :key="link.icon" router :to="link.route">{{link.Text}}</v-btn>
             </v-toolbar-items>
         </v-toolbar>
         <v-navigation-drawer  app v-model="nav_drawer" temporary>
