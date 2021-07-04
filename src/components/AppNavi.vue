@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-toolbar dark dense flat color="blue">
+        <v-toolbar dark dense flat>
             <v-app-bar-nav-icon @click="nav_drawer=!nav_drawer" v-if="$vuetify.breakpoint.xsOnly"></v-app-bar-nav-icon>
             <v-toolbar-title>
                 <v-btn text router :to="'/'">
@@ -24,7 +24,7 @@
                             <v-list-item-title>{{link.text}}</v-list-item-title>
                         </v-list-item-content>
                     </v-list-item>
-                    </v-list-item-group>
+                </v-list-item-group>
             </v-list>
         </v-navigation-drawer>
     </div>
