@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import AppNavi from './components/AppNavi.vue';
+import AppNavi from './components/AppNavi';
 
 export default {
   name: 'App',
