@@ -16,7 +16,7 @@ export default {
 </script>
 <style scoped>
 .home-head{
-    background: url('/home/shd-sftp/shd-vue/src/assets/home_background.jpg');
+    background: url('../assets/home_background.jpg');
     background-size: cover;
     width: 100%;
     height: 100%;

@@ -6,7 +6,13 @@
                 <div>
                     <span class="display-1 font-weight-bold my-2">마음의 순례길 행사 및 공지</span>
                     <div>
-                        <span v-for="item in items" :key="item.title" :href="item.link">{{item.title}}</span>
+                        <span>2022년 3월 2일 정기 걷기</span>
+                    </div>
+                     <div>
+                        <span>마음의 순례길 공식 어플리케이션 출시</span>
+                    </div>
+                     <div>
+                        <span>마음의 순례길 사진 공모전 개최</span>
                     </div>
                 </div>
             </v-flex>
@@ -30,13 +36,13 @@ export default {
 </script>
 <style scoped>
 .poster{
-    background: url('/home/shd-sftp/shd-vue/src/assets/home_body_poster.jpg');
+    background: url('../assets/home_body_poster.jpg');
     background-size: cover;
     width: 100%;
     height: 100%;
 }
 .content{
-    background: url('/home/shd-sftp/shd-vue/src/assets/home_body_content.jpg');
+    background: url('../assets/home_body_content.jpg');
     background-size: cover;
     width: 100%;
     height: 100%;

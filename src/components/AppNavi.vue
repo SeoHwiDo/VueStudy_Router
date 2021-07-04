@@ -1,5 +1,5 @@
 <template>
-    <div class="app-navi">
+    <div>
         <v-toolbar dense dark>
             <v-app-bar-nav-icon @click="nav_drawer=!nav_drawer" v-if="$vuetify.breakpoint.xsOnly"></v-app-bar-nav-icon>
             <v-toolbar-title>
