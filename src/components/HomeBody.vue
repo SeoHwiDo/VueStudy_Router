@@ -1,7 +1,7 @@
 <template>
     <v-app>
         <v-container fluid>
-            <v-flex xs4 class="text-xs-center my-2"><div class="poster"></div></v-flex>
+            <v-flex xs4 class="text-xs-center my-2"><div class="poster"><img src="../assets/home_body_poster.jpg" alt=""></div></v-flex>
             <v-flex xs4 class="text-xs-center my-2">
                 <div>
                     <span class="display-1 font-weight-bold my-2">마음의 순례길 행사 및 공지</span>
@@ -16,7 +16,7 @@
                     </div>
                 </div>
             </v-flex>
-            <v-flex xs4 class="text-xs-center my-2"><div class="content"></div></v-flex>
+            <v-flex xs4 class="text-xs-center my-2"><div class="content"><img src="../assets/home_body_content.jpg" alt=""></div></v-flex>
         </v-container>
     </v-app>
 </template>
@@ -36,14 +36,10 @@ export default {
 </script>
 <style scoped>
 .poster{
-    background: url('../assets/home_body_poster.jpg');
-    background-size: cover;
     width: 100%;
     height: 100%;
 }
 .content{
-    background: url('../assets/home_body_content.jpg');
-    background-size: cover;
     width: 100%;
     height: 100%;
 }
