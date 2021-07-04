@@ -18,7 +18,7 @@
                 <v-list-item-group v-model="group" active-class="deep-purple--text text--accent-4">
                     <v-list-item v-for="link in links" :key="link.name" router :to="link.route">
                         <v-list-item-action>
-                            <v-icon left>{{link.icon}}</v-icon>
+                            <v-icon left>{{link.icon}}{{link.text}}</v-icon>
                         </v-list-item-action>
                         <v-list-item-content>
                             <v-list-item-title>{{link.text}}</v-list-item-title>
