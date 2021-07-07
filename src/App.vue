@@ -2,7 +2,6 @@
   <div>
     <app-navi></app-navi>
     <v-content>
-      
       <router-view></router-view>
     </v-content>
   </div>
