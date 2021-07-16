@@ -8,7 +8,7 @@ export default {
     name:'Intro',
     data() {
         return{
-            img:require("../assets/map.png"),
+            img:require("../../assets/map.png"),
             imgsize:{
               width:"100%",
               height: "auto",

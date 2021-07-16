@@ -1,17 +1,25 @@
 <template>
-  <div>
-    <app-navi></app-navi>
-    <v-content>
-      <router-view></router-view>
-    </v-content>
-  </div>
+  <v-app id="app">
+    <app-navi />
+    <v-main>
+        <router-view />
+    </v-main>
+    <foot-bar />
+  </v-app>
 </template>
 
 <script>
 import AppNavi from '@/components/AppNavi';
-
+import FootBar from '@/components/footbar';
 export default {
   name: 'App',
-  components:{AppNavi}
+  components:{AppNavi,FootBar}
 }
+
 </script>
+<style>
+#main {
+ width: 100%;
+ height: 100%;
+}
+</style>

@@ -1,8 +1,8 @@
 <template>
-  <span>
+<v-app>
     <home-head></home-head>
     <home-body></home-body>
-  </span>
+</v-app>
 </template>
 
 <script>
@@ -14,3 +14,4 @@
     },
   }
 </script>
+
