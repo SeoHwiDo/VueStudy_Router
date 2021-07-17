@@ -35,9 +35,15 @@
         </v-toolbar>
         
         <v-navigation-drawer v-model="nav_drawer" absolute temporary>
+            <v-menu open-on-hover offset-x
+                tile
+                v-for="link in links" 
+                :key="link.name" >
+                 <template v-slot:activator="{ on, attrs }">
             <v-list nav>
                 <v-list-item-group v-model="group" active-class="deep-purple--text text--accent-4">
-                    <v-list-item v-for="link in links" :key="link.name" router :to="link.route">
+                    <v-list-item router :to="link.route" v-bind="attrs"
+                        v-on="on">>
                         <v-list-item-action>
                             <v-icon left>{{link.icon}}</v-icon>
                         </v-list-item-action>
@@ -46,7 +52,15 @@
                         </v-list-item-content>
                     </v-list-item>
                 </v-list-item-group>
+                
             </v-list>
+            </template>
+            <v-list v-if="link.item">
+                            <v-list-item v-for="item in link.item" :key="item.name" router :to="item.route" >
+                                    <v-list-item-title>{{item.text}}</v-list-item-title>
+                            </v-list-item>
+                    </v-list>
+            </v-menu>
         </v-navigation-drawer>
     </div>
 </template>
