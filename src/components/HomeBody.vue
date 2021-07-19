@@ -2,13 +2,13 @@
     <v-app>
         <v-container class="back" fluid >
                 <v-layout row wrap>
-                    <v-col cols="12" sm="4" >
-                        <v-card >
+                    <v-col sm="4" >
+                        <v-card height="500">
                             <v-img src="../assets/home_body_poster.jpg" />
                         </v-card>
                     </v-col>
-                    <v-col cols="12" sm="4">
-                        <v-card>
+                    <v-col sm="4">
+                        <v-card height="500">
                             <v-list>
                                 <v-list-item-title class="display-1 font-weight-bold my-2">마음의 순례길 행사 및 공지</v-list-item-title>
                                     <v-list-item v-for="item in items" :key="item.name" router :to="item.link">
@@ -19,9 +19,9 @@
                             </v-list>
                         </v-card>
                     </v-col>
-                    <v-col cols="12" sm="4">
-                        <v-card>
-                            <v-img src="../assets/home_body_content.jpg" />
+                    <v-col sm="4">
+                        <v-card >
+                            <v-img src="../assets/home_body_content.jpg" height="500" />
                         </v-card>
                     </v-col>
                 </v-layout>
@@ -45,6 +45,7 @@ export default {
 <style scoped>
 .back{
     background:#5EC75E;
-    
+    height: 150%;
+    width: 150%;
 }
 </style>
