@@ -1,24 +1,24 @@
 
 <template>
     <div>
-        <v-toolbar flat dark color="#228B22" height="100px">
+        <v-toolbar dark color="#FFFFFF">
             <v-app-bar-nav-icon @click="nav_drawer=!nav_drawer" v-if="$vuetify.breakpoint.xsOnly"/>
             <v-toolbar-title>
-                <v-card color="#228B22">
+                <v-card color="#FFFFFF">
                     <v-img  src="../assets/logo.png" width="80"/>
                 </v-card>
             </v-toolbar-title>
             <v-toolbar-title>
-                <v-card tile dark center class="white--text text-center" color="#228B22"  router :to="'/'">
+                <v-card tile dark center class="white--text text-center" color="#FFFFFF"  router :to="'/'">
                     <span style=" font-size:50px; font-weight:bold; color:orange;">G</span>
-                    <span style=" font-size:30px; font-weight:bold">road</span>
+                    <span style=" font-size:30px; font-weight:bold; color:#3b7097;" >road</span>
                 </v-card>
             </v-toolbar-title>
             <v-spacer />
             <v-toolbar-items v-if="$vuetify.breakpoint.smAndUp">
                 <v-menu open-on-hover offset-y tile v-for="link in links" :key="link.name">
                     <template v-slot:activator="{ on, attrs }">
-                        <v-btn text router :to="link.route" v-bind="attrs" v-on="on">
+                        <v-btn text style="font-weight:bold" color="#3b7097" router :to="link.route" v-bind="attrs" v-on="on">
                             {{link.Text}}
                         </v-btn>
                     </template>

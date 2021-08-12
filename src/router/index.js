@@ -58,7 +58,7 @@ const routes = [
     children:[
       {path:'/',name:'Community',                     component: () => import('../views/Community/CommunityHome.vue')},
       {path:'notice', name:'Community-Notice',        component: () => import('../views/Community/CommunityNotice.vue')},
-      {path:'freeboard', name:'Community-FreeBoard',  component: () => import('../views/Community/CommunityFreeBoard.vue')},
+      {path:'freeboard', name:'Community-FreeBoard',  component: () => import('../views/Community/board/CommunityFreeBoard.vue')},
       {path:'newsletter', name:'Community-NewsLetter',component: () => import('../views/Community/CommunityNewsLetter.vue')},
       {path:'content', name:'Community-Content',      component: () => import('../views/Community/CommunityContent.vue')},
     ]

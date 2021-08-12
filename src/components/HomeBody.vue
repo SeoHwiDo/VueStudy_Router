@@ -44,7 +44,7 @@ export default {
 </script>
 <style scoped>
 .back{
-    background:#5EC75E;
+    background:#A2e2f8;
     height: 150%;
     width: 150%;
 }
