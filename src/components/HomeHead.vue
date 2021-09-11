@@ -1,12 +1,16 @@
 <template>
     <v-app>
-        <v-container fluid fill-height class="home-head">
+        <v-carousel :cycle=true height=1000>
+            <v-carousel-item src="../assets/home_background.jpg"/>
+            <v-carousel-item src="../assets/home_background.jpg"/>
+        </v-carousel>
+        <!-- <v-container fluid fill-height class="home-head">
             <v-layout justify-center align-center column pa-5>
                 <div class="display-4 font-weight-black white--text text-xs-center">춘천 마음의 순례길,</div>
                 <div class="display-4 font-weight-black white--text text-xs-center">마음과 함께 길을 걷다</div>
                 <div class="display-1 font-weight-bold white--text text-xs-center">춘천의 여러 역사 유적과 관광명소를 둘러보는 마음의 순례길을 걸어보세요</div>
             </v-layout>
-        </v-container>
+        </v-container> -->
     </v-app>
 </template>
 <script>

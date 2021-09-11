@@ -5,7 +5,7 @@ module.exports = {
   devServer:{
     proxy:{
       '/api':{
-        target:'21.0119.225.18:3030/api',
+        target:'210.119.225.18:3000',
         changeOrigin: true,
         pathRewirte:{
           '^/api':''
@@ -13,5 +13,5 @@ module.exports = {
       }
     }
   },
-outputDir:'../exp-vue/public',
+outputDir:'../groad_express/public',
 }

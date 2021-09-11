@@ -21,10 +21,6 @@ const routes = [
     component: () => import('../views/triphelper/TripHelper.vue'),
     children:[
       {path:'/',name:'triphelper',component: () => import('../views/triphelper/TripHelperHome.vue')},
-      {path:'guide',name:'triphelper-Guide',component: () => import('../views/triphelper/TripHelperGuide.vue')},
-      {path:'materials',name:'triphelper-Materials',component: () => import('../views/triphelper/TripHelperMaterials.vue')},
-      {path:'service',name:'triphelper-Service',component: () => import('../views/triphelper/TripHelperService.vue')},
-      {path:'passport',name:'triphelper-PassPort',component: () => import('../views/triphelper/TripHelperPassPort.vue')},
     ]
   },
   {
@@ -57,10 +53,18 @@ const routes = [
     component: () => import('../views/Community/Community.vue'),
     children:[
       {path:'/',name:'Community',                     component: () => import('../views/Community/CommunityHome.vue')},
-      {path:'notice', name:'Community-Notice',        component: () => import('../views/Community/CommunityNotice.vue')},
+      {path:'notice/:id', name:'Community-Notice',        component: () => import('../views/Community/CommunityNotice.vue')},
       {path:'freeboard', name:'Community-FreeBoard',  component: () => import('../views/Community/board/CommunityFreeBoard.vue')},
       {path:'newsletter', name:'Community-NewsLetter',component: () => import('../views/Community/CommunityNewsLetter.vue')},
       {path:'content', name:'Community-Content',      component: () => import('../views/Community/CommunityContent.vue')},
+    ]
+  },{
+    path:'/user',
+    name:'',
+    children:[
+      {path:'login', name:'login',  component: () => import('../views/User/Login.vue')},
+      {path:'mypage', name:'mypage',component: () => import('../views/User/Mypage.vue')},
+      {path:'signup', name:'signup',      component: () => import('../views/User/Signup.vue')},
     ]
   }
 ]
